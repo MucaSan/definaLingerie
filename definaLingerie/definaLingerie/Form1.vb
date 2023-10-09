@@ -12,10 +12,12 @@
     End Sub
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
-        If txt_senha.Text = "admin" And txt_user.Text = "admin" Then
+        If txt_senha.Text = "func" And txt_user.Text = "func" Then
             MsgBox("Logado com sucesso!")
             txt_senha.Clear()
             txt_user.Clear()
+
+            Me.Close()
         Else
             txt_senha.Clear()
             txt_user.Clear()

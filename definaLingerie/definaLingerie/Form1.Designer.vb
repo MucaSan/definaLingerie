@@ -34,11 +34,12 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MediumVioletRed
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(422, 64)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(378, 268)
+        Me.PictureBox1.Size = New System.Drawing.Size(504, 330)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -46,68 +47,81 @@ Partial Class Form1
         'Usuário
         '
         Me.Usuário.AutoSize = True
-        Me.Usuário.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Usuário.ForeColor = System.Drawing.SystemColors.Control
-        Me.Usuário.Location = New System.Drawing.Point(972, 314)
+        Me.Usuário.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Usuário.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Usuário.Location = New System.Drawing.Point(461, 460)
+        Me.Usuário.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Usuário.Name = "Usuário"
-        Me.Usuário.Size = New System.Drawing.Size(96, 29)
+        Me.Usuário.Size = New System.Drawing.Size(119, 35)
         Me.Usuário.TabIndex = 3
         Me.Usuário.Text = "Usuário"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(972, 405)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(461, 591)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 29)
+        Me.Label2.Size = New System.Drawing.Size(101, 35)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Senha"
         '
         'btn_login
         '
-        Me.btn_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_login.Location = New System.Drawing.Point(985, 536)
+        Me.btn_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia
+        Me.btn_login.FlatAppearance.BorderSize = 0
+        Me.btn_login.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_login.ForeColor = System.Drawing.Color.Ivory
+        Me.btn_login.Location = New System.Drawing.Point(466, 727)
+        Me.btn_login.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(287, 52)
+        Me.btn_login.Size = New System.Drawing.Size(423, 54)
         Me.btn_login.TabIndex = 5
         Me.btn_login.Tag = ""
         Me.btn_login.Text = "Logar"
-        Me.btn_login.UseVisualStyleBackColor = True
+        Me.btn_login.UseVisualStyleBackColor = False
         '
         'txt_user
         '
-        Me.txt_user.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_user.Location = New System.Drawing.Point(977, 346)
+        Me.txt_user.BackColor = System.Drawing.Color.White
+        Me.txt_user.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_user.Location = New System.Drawing.Point(466, 502)
+        Me.txt_user.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_user.Multiline = True
         Me.txt_user.Name = "txt_user"
-        Me.txt_user.Size = New System.Drawing.Size(318, 45)
+        Me.txt_user.Size = New System.Drawing.Size(423, 54)
         Me.txt_user.TabIndex = 6
         '
         'txt_senha
         '
-        Me.txt_senha.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_senha.Location = New System.Drawing.Point(977, 446)
+        Me.txt_senha.BackColor = System.Drawing.Color.White
+        Me.txt_senha.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_senha.Location = New System.Drawing.Point(466, 632)
+        Me.txt_senha.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_senha.Multiline = True
         Me.txt_senha.Name = "txt_senha"
         Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_senha.Size = New System.Drawing.Size(318, 45)
+        Me.txt_senha.Size = New System.Drawing.Size(423, 54)
         Me.txt_senha.TabIndex = 7
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.Color.MediumVioletRed
-        Me.ClientSize = New System.Drawing.Size(1444, 826)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1279, 1017)
         Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.txt_user)
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Usuário)
         Me.Controls.Add(Me.PictureBox1)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
