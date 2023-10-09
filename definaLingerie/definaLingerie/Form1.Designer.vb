@@ -37,7 +37,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(422, 64)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(504, 330)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -76,7 +76,7 @@ Partial Class Form1
         Me.btn_login.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.Ivory
         Me.btn_login.Location = New System.Drawing.Point(466, 727)
-        Me.btn_login.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_login.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(423, 54)
         Me.btn_login.TabIndex = 5
@@ -89,7 +89,7 @@ Partial Class Form1
         Me.txt_user.BackColor = System.Drawing.Color.White
         Me.txt_user.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_user.Location = New System.Drawing.Point(466, 502)
-        Me.txt_user.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_user.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_user.Multiline = True
         Me.txt_user.Name = "txt_user"
         Me.txt_user.Size = New System.Drawing.Size(423, 54)
@@ -100,7 +100,7 @@ Partial Class Form1
         Me.txt_senha.BackColor = System.Drawing.Color.White
         Me.txt_senha.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_senha.Location = New System.Drawing.Point(466, 632)
-        Me.txt_senha.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_senha.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_senha.Multiline = True
         Me.txt_senha.Name = "txt_senha"
         Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Usuário)
         Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
