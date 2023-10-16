@@ -34,7 +34,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(422, 64)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
@@ -48,7 +48,7 @@ Partial Class Form1
         '
         Me.Usuário.AutoSize = True
         Me.Usuário.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Usuário.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Usuário.ForeColor = System.Drawing.Color.Ivory
         Me.Usuário.Location = New System.Drawing.Point(461, 460)
         Me.Usuário.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Usuário.Name = "Usuário"
@@ -60,7 +60,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.ForeColor = System.Drawing.Color.Ivory
         Me.Label2.Location = New System.Drawing.Point(461, 591)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
@@ -70,7 +70,7 @@ Partial Class Form1
         '
         'btn_login
         '
-        Me.btn_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.btn_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia
         Me.btn_login.FlatAppearance.BorderSize = 0
         Me.btn_login.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -79,7 +79,7 @@ Partial Class Form1
         Me.btn_login.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(423, 54)
-        Me.btn_login.TabIndex = 5
+        Me.btn_login.TabIndex = 3
         Me.btn_login.Tag = ""
         Me.btn_login.Text = "Logar"
         Me.btn_login.UseVisualStyleBackColor = False
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.txt_user.Multiline = True
         Me.txt_user.Name = "txt_user"
         Me.txt_user.Size = New System.Drawing.Size(423, 54)
-        Me.txt_user.TabIndex = 6
+        Me.txt_user.TabIndex = 1
         '
         'txt_senha
         '
@@ -105,14 +105,14 @@ Partial Class Form1
         Me.txt_senha.Name = "txt_senha"
         Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_senha.Size = New System.Drawing.Size(423, 54)
-        Me.txt_senha.TabIndex = 7
+        Me.txt_senha.TabIndex = 2
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1279, 1017)
         Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.txt_user)
