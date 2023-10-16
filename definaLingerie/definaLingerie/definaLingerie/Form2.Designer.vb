@@ -22,6 +22,7 @@ Partial Class Form2
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -36,72 +37,87 @@ Partial Class Form2
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(368, -1)
+        Me.Label1.Font = New System.Drawing.Font("Dubai", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(444, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(407, 80)
+        Me.Label1.Size = New System.Drawing.Size(390, 80)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Área do Administrador"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(32, 179)
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Location = New System.Drawing.Point(71, 179)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(279, 249)
+        Me.PictureBox1.Size = New System.Drawing.Size(258, 206)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(433, 179)
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox2.Location = New System.Drawing.Point(497, 172)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(279, 249)
+        Me.PictureBox2.Size = New System.Drawing.Size(279, 213)
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(830, 179)
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox3.Location = New System.Drawing.Point(921, 172)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(279, 249)
+        Me.PictureBox3.Size = New System.Drawing.Size(279, 213)
         Me.PictureBox3.TabIndex = 3
         Me.PictureBox3.TabStop = False
         '
         'btn_clientes
         '
-        Me.btn_clientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_clientes.Location = New System.Drawing.Point(22, 462)
+        Me.btn_clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btn_clientes.Font = New System.Drawing.Font("Dubai", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_clientes.ForeColor = System.Drawing.Color.Ivory
+        Me.btn_clientes.Location = New System.Drawing.Point(71, 426)
         Me.btn_clientes.Name = "btn_clientes"
-        Me.btn_clientes.Size = New System.Drawing.Size(307, 104)
+        Me.btn_clientes.Size = New System.Drawing.Size(258, 104)
         Me.btn_clientes.TabIndex = 4
         Me.btn_clientes.Text = "Administrar Clientes"
-        Me.btn_clientes.UseVisualStyleBackColor = True
+        Me.btn_clientes.UseVisualStyleBackColor = False
         '
         'btn_relatorios
         '
-        Me.btn_relatorios.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_relatorios.Location = New System.Drawing.Point(417, 462)
+        Me.btn_relatorios.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btn_relatorios.Font = New System.Drawing.Font("Dubai", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_relatorios.ForeColor = System.Drawing.Color.Ivory
+        Me.btn_relatorios.Location = New System.Drawing.Point(497, 426)
         Me.btn_relatorios.Name = "btn_relatorios"
-        Me.btn_relatorios.Size = New System.Drawing.Size(307, 104)
+        Me.btn_relatorios.Size = New System.Drawing.Size(279, 104)
         Me.btn_relatorios.TabIndex = 5
         Me.btn_relatorios.Text = "Relatórios"
-        Me.btn_relatorios.UseVisualStyleBackColor = True
+        Me.btn_relatorios.UseVisualStyleBackColor = False
         '
         'btn_deslogar
         '
-        Me.btn_deslogar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_deslogar.Location = New System.Drawing.Point(814, 462)
+        Me.btn_deslogar.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.btn_deslogar.Font = New System.Drawing.Font("Dubai", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_deslogar.ForeColor = System.Drawing.Color.Ivory
+        Me.btn_deslogar.Location = New System.Drawing.Point(921, 426)
         Me.btn_deslogar.Name = "btn_deslogar"
-        Me.btn_deslogar.Size = New System.Drawing.Size(307, 104)
+        Me.btn_deslogar.Size = New System.Drawing.Size(279, 104)
         Me.btn_deslogar.TabIndex = 6
         Me.btn_deslogar.Text = "Deslogar"
-        Me.btn_deslogar.UseVisualStyleBackColor = True
+        Me.btn_deslogar.UseVisualStyleBackColor = False
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1133, 719)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1276, 719)
         Me.Controls.Add(Me.btn_deslogar)
         Me.Controls.Add(Me.btn_relatorios)
         Me.Controls.Add(Me.btn_clientes)
