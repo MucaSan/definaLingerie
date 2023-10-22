@@ -36,10 +36,9 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(422, 64)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Location = New System.Drawing.Point(316, 52)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(504, 330)
+        Me.PictureBox1.Size = New System.Drawing.Size(378, 268)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -49,10 +48,9 @@ Partial Class Form1
         Me.Usuário.AutoSize = True
         Me.Usuário.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Usuário.ForeColor = System.Drawing.Color.Ivory
-        Me.Usuário.Location = New System.Drawing.Point(461, 460)
-        Me.Usuário.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Usuário.Location = New System.Drawing.Point(346, 374)
         Me.Usuário.Name = "Usuário"
-        Me.Usuário.Size = New System.Drawing.Size(119, 35)
+        Me.Usuário.Size = New System.Drawing.Size(94, 27)
         Me.Usuário.TabIndex = 3
         Me.Usuário.Text = "Usuário"
         '
@@ -61,10 +59,9 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Ivory
-        Me.Label2.Location = New System.Drawing.Point(461, 591)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(346, 466)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 35)
+        Me.Label2.Size = New System.Drawing.Size(82, 27)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Senha"
         '
@@ -75,10 +72,9 @@ Partial Class Form1
         Me.btn_login.FlatAppearance.BorderSize = 0
         Me.btn_login.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.Ivory
-        Me.btn_login.Location = New System.Drawing.Point(466, 727)
-        Me.btn_login.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_login.Location = New System.Drawing.Point(349, 556)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(423, 54)
+        Me.btn_login.Size = New System.Drawing.Size(319, 44)
         Me.btn_login.TabIndex = 3
         Me.btn_login.Tag = ""
         Me.btn_login.Text = "Logar"
@@ -88,32 +84,30 @@ Partial Class Form1
         '
         Me.txt_user.BackColor = System.Drawing.Color.White
         Me.txt_user.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_user.Location = New System.Drawing.Point(466, 502)
-        Me.txt_user.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_user.Location = New System.Drawing.Point(350, 408)
         Me.txt_user.Multiline = True
         Me.txt_user.Name = "txt_user"
-        Me.txt_user.Size = New System.Drawing.Size(423, 54)
+        Me.txt_user.Size = New System.Drawing.Size(318, 35)
         Me.txt_user.TabIndex = 1
         '
         'txt_senha
         '
         Me.txt_senha.BackColor = System.Drawing.Color.White
         Me.txt_senha.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_senha.Location = New System.Drawing.Point(466, 632)
-        Me.txt_senha.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_senha.Location = New System.Drawing.Point(349, 496)
         Me.txt_senha.Multiline = True
         Me.txt_senha.Name = "txt_senha"
         Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_senha.Size = New System.Drawing.Size(423, 54)
+        Me.txt_senha.Size = New System.Drawing.Size(319, 35)
         Me.txt_senha.TabIndex = 2
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1279, 1017)
+        Me.ClientSize = New System.Drawing.Size(959, 641)
         Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.txt_user)
         Me.Controls.Add(Me.btn_login)
@@ -121,9 +115,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Usuário)
         Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Defina - Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -13,4 +13,9 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
 
     End Sub
+
+    Private Sub btn_deslogar_Click(sender As Object, e As EventArgs) Handles btn_deslogar.Click
+        Me.Close()
+        Form1.Show()
+    End Sub
 End Class
