@@ -13,4 +13,9 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
 
     End Sub
+
+    Private Sub btn_clientes_Click(sender As Object, e As EventArgs) Handles btn_clientes.Click
+        Form4.Show()
+        Me.Hide()
+    End Sub
 End Class

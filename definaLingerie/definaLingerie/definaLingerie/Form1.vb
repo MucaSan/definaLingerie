@@ -15,7 +15,6 @@ Public Class Form1
     End Sub
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
-        MsgBox(dbPath)
         Dim sql As String = "SELECT * FROM tb_funcionarios WHERE usuario='" & txt_user.Text & "' AND senha= '" & txt_senha.Text & "'"
         Dim command As New SQLiteCommand(sql, connection)
         Using reader As SQLiteDataReader = command.ExecuteReader()
@@ -33,5 +32,6 @@ Public Class Form1
                 End If
             End If
         End Using
+        connection.Close()
     End Sub
 End Class
