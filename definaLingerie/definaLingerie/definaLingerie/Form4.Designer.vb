@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form4
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form4
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -40,7 +41,13 @@ Partial Class Form4
         Me.btn_criar = New System.Windows.Forms.Button()
         Me.btn_editar = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.txt_valor = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Me.cmb_parametro = New System.Windows.Forms.ToolStripComboBox()
+        Me.btn_filtrar = New System.Windows.Forms.ToolStripButton()
         Me.btn_deletar = New System.Windows.Forms.Button()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -180,7 +187,7 @@ Partial Class Form4
         '
         'btn_criar
         '
-        Me.btn_criar.Location = New System.Drawing.Point(604, 81)
+        Me.btn_criar.Location = New System.Drawing.Point(497, 349)
         Me.btn_criar.Name = "btn_criar"
         Me.btn_criar.Size = New System.Drawing.Size(146, 40)
         Me.btn_criar.TabIndex = 14
@@ -189,7 +196,7 @@ Partial Class Form4
         '
         'btn_editar
         '
-        Me.btn_editar.Location = New System.Drawing.Point(604, 162)
+        Me.btn_editar.Location = New System.Drawing.Point(685, 349)
         Me.btn_editar.Name = "btn_editar"
         Me.btn_editar.Size = New System.Drawing.Size(146, 40)
         Me.btn_editar.TabIndex = 15
@@ -199,15 +206,48 @@ Partial Class Form4
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.txt_valor, Me.ToolStripLabel2, Me.cmb_parametro, Me.btn_filtrar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1140, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1140, 28)
         Me.ToolStrip1.TabIndex = 17
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(194, 25)
+        Me.ToolStripLabel1.Text = "Insira o valor correspodente"
+        '
+        'txt_valor
+        '
+        Me.txt_valor.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txt_valor.Name = "txt_valor"
+        Me.txt_valor.Size = New System.Drawing.Size(100, 28)
+        '
+        'ToolStripLabel2
+        '
+        Me.ToolStripLabel2.Name = "ToolStripLabel2"
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(172, 25)
+        Me.ToolStripLabel2.Text = "Selecione um parâmetro"
+        '
+        'cmb_parametro
+        '
+        Me.cmb_parametro.Name = "cmb_parametro"
+        Me.cmb_parametro.Size = New System.Drawing.Size(121, 28)
+        '
+        'btn_filtrar
+        '
+        Me.btn_filtrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btn_filtrar.Image = CType(resources.GetObject("btn_filtrar.Image"), System.Drawing.Image)
+        Me.btn_filtrar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btn_filtrar.Name = "btn_filtrar"
+        Me.btn_filtrar.Size = New System.Drawing.Size(29, 25)
+        Me.btn_filtrar.Text = "ToolStripButton1"
+        '
         'btn_deletar
         '
-        Me.btn_deletar.Location = New System.Drawing.Point(604, 247)
+        Me.btn_deletar.Location = New System.Drawing.Point(887, 349)
         Me.btn_deletar.Name = "btn_deletar"
         Me.btn_deletar.Size = New System.Drawing.Size(146, 40)
         Me.btn_deletar.TabIndex = 16
@@ -239,6 +279,8 @@ Partial Class Form4
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form4"
         Me.Text = "Form4"
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -263,4 +305,9 @@ Partial Class Form4
     Friend WithEvents btn_editar As Button
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents btn_deletar As Button
+    Friend WithEvents ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents txt_valor As ToolStripTextBox
+    Friend WithEvents ToolStripLabel2 As ToolStripLabel
+    Friend WithEvents cmb_parametro As ToolStripComboBox
+    Friend WithEvents btn_filtrar As ToolStripButton
 End Class
