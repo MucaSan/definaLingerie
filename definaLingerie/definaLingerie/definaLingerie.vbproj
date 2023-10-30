@@ -126,6 +126,12 @@
     <Compile Include="Form4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -204,6 +213,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\fotos\icons\icons8-staff-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\icons8-product-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\icons8-product-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\icons8-user-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\foto-perfil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\foto-perfil-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fotos\icons\default-picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

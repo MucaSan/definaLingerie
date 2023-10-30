@@ -124,4 +124,9 @@ Public Class Form4
     Private Sub Form4_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         connection.Close()
     End Sub
+
+    Private Sub btn_deslogar_Click(sender As Object, e As EventArgs) Handles btn_deslogar.Click
+        Me.Close()
+        Form2.Show()
+    End Sub
 End Class

@@ -37,30 +37,32 @@ Partial Class Form4
         Me.txt_valor = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.cmb_parametro = New System.Windows.Forms.ToolStripComboBox()
-        Me.btn_filtrar = New System.Windows.Forms.ToolStripButton()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.txt_nome = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_user = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.txt_email = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_senha = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_cpf = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_telefone = New Guna.UI2.WinForms.Guna2TextBox()
         Me.cmb_data = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.btn_criar = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.btn_editar = New Guna.UI2.WinForms.Guna2Button()
         Me.btn_deletar = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.btn_filtrar = New System.Windows.Forms.ToolStripButton()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.btn_deslogar = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btn_deslogar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -191,15 +193,6 @@ Partial Class Form4
         Me.cmb_parametro.Name = "cmb_parametro"
         Me.cmb_parametro.Size = New System.Drawing.Size(92, 27)
         '
-        'btn_filtrar
-        '
-        Me.btn_filtrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btn_filtrar.Image = CType(resources.GetObject("btn_filtrar.Image"), System.Drawing.Image)
-        Me.btn_filtrar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btn_filtrar.Name = "btn_filtrar"
-        Me.btn_filtrar.Size = New System.Drawing.Size(24, 24)
-        Me.btn_filtrar.Text = "ToolStripButton1"
-        '
         'Guna2Elipse1
         '
         Me.Guna2Elipse1.BorderRadius = 20
@@ -211,6 +204,7 @@ Partial Class Form4
         '
         'Guna2AnimateWindow1
         '
+        Me.Guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND
         Me.Guna2AnimateWindow1.TargetForm = Me
         '
         'Guna2DragControl1
@@ -266,17 +260,6 @@ Partial Class Form4
         Me.txt_user.SelectedText = ""
         Me.txt_user.Size = New System.Drawing.Size(238, 36)
         Me.txt_user.TabIndex = 19
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.definaLingerie.My.Resources.Resources.background_form
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(241, 96)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(580, 386)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.Guna2PictureBox2.TabIndex = 21
-        Me.Guna2PictureBox2.TabStop = False
         '
         'txt_email
         '
@@ -412,18 +395,6 @@ Partial Class Form4
         Me.btn_criar.TabIndex = 29
         Me.btn_criar.Text = "Criar"
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.BorderRadius = 28
-        Me.Guna2PictureBox1.Image = Global.definaLingerie.My.Resources.Resources.definaLogo
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 41)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(56, 56)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 30
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'btn_editar
         '
         Me.btn_editar.Animated = True
@@ -496,12 +467,59 @@ Partial Class Form4
         Me.Guna2ControlBox2.Size = New System.Drawing.Size(35, 35)
         Me.Guna2ControlBox2.TabIndex = 1
         '
+        'btn_filtrar
+        '
+        Me.btn_filtrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btn_filtrar.Image = CType(resources.GetObject("btn_filtrar.Image"), System.Drawing.Image)
+        Me.btn_filtrar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btn_filtrar.Name = "btn_filtrar"
+        Me.btn_filtrar.Size = New System.Drawing.Size(24, 24)
+        Me.btn_filtrar.Text = "ToolStripButton1"
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.BorderRadius = 28
+        Me.Guna2PictureBox1.Image = Global.definaLingerie.My.Resources.Resources.definaLogo
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 41)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(56, 56)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 30
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.definaLingerie.My.Resources.Resources.background_form
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(241, 96)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(580, 386)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Guna2PictureBox2.TabIndex = 21
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'btn_deslogar
+        '
+        Me.btn_deslogar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_deslogar.BorderRadius = 28
+        Me.btn_deslogar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_deslogar.Image = Global.definaLingerie.My.Resources.Resources.icons8_quit_50
+        Me.btn_deslogar.ImageRotate = 0!
+        Me.btn_deslogar.Location = New System.Drawing.Point(759, 41)
+        Me.btn_deslogar.Name = "btn_deslogar"
+        Me.btn_deslogar.Size = New System.Drawing.Size(50, 50)
+        Me.btn_deslogar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.btn_deslogar.TabIndex = 34
+        Me.btn_deslogar.TabStop = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(821, 482)
+        Me.Controls.Add(Me.btn_deslogar)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.btn_deletar)
         Me.Controls.Add(Me.ToolStrip1)
@@ -530,9 +548,10 @@ Partial Class Form4
         Me.Text = "Form4"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btn_deslogar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -571,4 +590,5 @@ Partial Class Form4
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents btn_deslogar As Guna.UI2.WinForms.Guna2PictureBox
 End Class

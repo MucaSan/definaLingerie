@@ -35,8 +35,9 @@ Partial Class Form1
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Guna2MessageDialog1 = New Guna.UI2.WinForms.Guna2MessageDialog()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
@@ -175,12 +176,13 @@ Partial Class Form1
         '
         'Guna2AnimateWindow1
         '
+        Me.Guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND
         Me.Guna2AnimateWindow1.TargetForm = Me
         '
         'Guna2DragControl1
         '
         Me.Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
-        Me.Guna2DragControl1.TargetControl = Me
+        Me.Guna2DragControl1.TargetControl = Me.Guna2Panel1
         Me.Guna2DragControl1.UseTransparentDrag = True
         '
         'Guna2Panel1
@@ -194,6 +196,16 @@ Partial Class Form1
         Me.Guna2Panel1.Size = New System.Drawing.Size(821, 35)
         Me.Guna2Panel1.TabIndex = 13
         '
+        'Guna2ControlBox1
+        '
+        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(786, 0)
+        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2ControlBox1.TabIndex = 0
+        '
         'Guna2ControlBox2
         '
         Me.Guna2ControlBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -205,15 +217,14 @@ Partial Class Form1
         Me.Guna2ControlBox2.Size = New System.Drawing.Size(35, 35)
         Me.Guna2ControlBox2.TabIndex = 1
         '
-        'Guna2ControlBox1
+        'Guna2MessageDialog1
         '
-        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(786, 0)
-        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(35, 35)
-        Me.Guna2ControlBox1.TabIndex = 0
+        Me.Guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
+        Me.Guna2MessageDialog1.Caption = Nothing
+        Me.Guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        Me.Guna2MessageDialog1.Parent = Nothing
+        Me.Guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.[Default]
+        Me.Guna2MessageDialog1.Text = Nothing
         '
         'Form1
         '
@@ -256,4 +267,5 @@ Partial Class Form1
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents Guna2MessageDialog1 As Guna.UI2.WinForms.Guna2MessageDialog
 End Class
