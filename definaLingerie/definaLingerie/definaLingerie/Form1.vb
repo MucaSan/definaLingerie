@@ -34,4 +34,13 @@ Public Class Form1
         End Using
         connection.Close()
     End Sub
+
+    Private Sub show_password_CheckedChanged(sender As Object, e As EventArgs) Handles show_password.CheckedChanged
+        If show_password.Checked = False Then
+            txt_senha.PasswordChar = "*"
+        Else
+            txt_senha.PasswordChar = ""
+        End If
+    End Sub
+
 End Class
