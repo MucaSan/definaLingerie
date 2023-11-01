@@ -15,30 +15,6 @@ Public Class Form4
         connection.Open()
         cmb_parametro.Items.Add("CPF")
         cmb_parametro.Items.Add("Usuário")
-
-    End Sub
-
-    Private Sub btn_criar_Click(sender As Object, e As EventArgs) Handles btn_criar.Click
-        Dim sql As String = "SELECT * FROM tb_funcionarios WHERE usuario='" & txt_user.Text & "';"
-
-
-        Dim command As New SQLiteCommand(sql, connection)
-        Using reader As SQLiteDataReader = command.ExecuteReader()
-            If reader.Read() Then
-                If reader("usuario") = txt_user.Text Or reader("nome") = txt_nome.Text Then
-                    MsgBox("Há um registro com esse usuário ou nome, insira outro nome ou usuário!", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical)
-                    txt_user.Clear()
-                    txt_nome.Clear()
-                End If
-            Else
-
-                MsgBox("CRIAÇÃO EFETUADA COM SUCESSO!")
-                sql = "INSERT INTO tb_funcionarios VALUES ('" & txt_cpf.Text & "','" & txt_nome.Text & "','" & txt_user.Text & "','" & txt_senha.Text & "','" & cmb_data.Text & "','" & txt_email.Text & "','" & txt_telefone.Text & "',2);"
-                Dim command2 As New SQLiteCommand(sql, connection)
-                command2.ExecuteNonQuery()
-            End If
-        End Using
-        connection.Close()
     End Sub
 
     Private Sub btn_filtrar_Click(sender As Object, e As EventArgs) Handles btn_filtrar.Click
@@ -80,6 +56,23 @@ Public Class Form4
         End If
     End Sub
 
+    Private Sub btn_deletar_Click(sender As Object, e As EventArgs) Handles btn_deletar.Click
+        Dim sql As String = "SELECT * FROM tb_funcionarios WHERE usuario='" & txt_user.Text & "';"
+        Dim command As New SQLiteCommand(sql, connection)
+        Using reader As SQLiteDataReader = command.ExecuteReader()
+            If reader.Read() Then
+                sql = "DELETE FROM tb_funcionarios WHERE usuario= '" & txt_user.Text & "'"
+                Dim command2 As New SQLiteCommand(sql, connection)
+                Try
+                    command2.ExecuteNonQuery()
+                    MsgBox("Deleção efetuada com sucesso!")
+                Catch ex As Exception
+                    MsgBox("Não foi possível realizar a deleção!")
+                End Try
+            End If
+        End Using
+    End Sub
+
     Private Sub btn_editar_Click(sender As Object, e As EventArgs) Handles btn_editar.Click
         Dim sql As String = "SELECT * FROM tb_funcionarios WHERE usuario='" & txt_user.Text & "';"
         Dim command As New SQLiteCommand(sql, connection)
@@ -106,20 +99,34 @@ Public Class Form4
             End If
         End Using
     End Sub
-    Private Sub btn_deletar_Click(sender As Object, e As EventArgs) Handles btn_deletar.Click
+
+    Private Sub btn_criar_Click(sender As Object, e As EventArgs) Handles btn_criar.Click
         Dim sql As String = "SELECT * FROM tb_funcionarios WHERE usuario='" & txt_user.Text & "';"
+
         Dim command As New SQLiteCommand(sql, connection)
         Using reader As SQLiteDataReader = command.ExecuteReader()
             If reader.Read() Then
-                sql = "DELETE FROM tb_funcionarios WHERE usuario= '" & txt_user.Text & "'"
+                If reader("usuario") = txt_user.Text Or reader("nome") = txt_nome.Text Then
+                    MsgBox("Há um registro com esse usuário ou nome, insira outro nome ou usuário!", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical)
+                    txt_user.Clear()
+                    txt_nome.Clear()
+                End If
+            Else
+
+                MsgBox("CRIAÇÃO EFETUADA COM SUCESSO!")
+                sql = "INSERT INTO tb_funcionarios VALUES ('" & txt_cpf.Text & "','" & txt_nome.Text & "','" & txt_user.Text & "','" & txt_senha.Text & "','" & cmb_data.Text & "','" & txt_email.Text & "','" & txt_telefone.Text & "',2);"
                 Dim command2 As New SQLiteCommand(sql, connection)
-                Try
-                    command2.ExecuteNonQuery()
-                    MsgBox("Deleção efetuada com sucesso!")
-                Catch ex As Exception
-                    MsgBox("Não foi possível realizar a deleção!")
-                End Try
+                command2.ExecuteNonQuery()
             End If
         End Using
+    End Sub
+
+    Private Sub Form4_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        connection.Close()
+    End Sub
+
+    Private Sub btn_deslogar_Click(sender As Object, e As EventArgs) Handles btn_deslogar.Click
+        Me.Close()
+        Form2.Show()
     End Sub
 End Class

@@ -1,0 +1,28 @@
+﻿Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Usuário.Click
+
+    End Sub
+
+    Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
+        If txt_senha.Text = "admin" And txt_user.Text = "admin" Then
+            MsgBox("Logado com sucesso!")
+            txt_senha.Clear()
+            txt_user.Clear()
+            Form2.Show()
+            Me.Hide()
+        Else
+            txt_senha.Clear()
+            txt_user.Clear()
+            MsgBox("Erro no log! Tente novamente!")
+
+        End If
+    End Sub
+End Class
