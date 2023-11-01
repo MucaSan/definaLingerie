@@ -214,6 +214,7 @@
   <ItemGroup>
     <None Include="bin\Debug\fotos\icons\icons8-staff-96.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="bin\Debug\fotos\icons\icons8-product-96.png" />
   </ItemGroup>
@@ -232,6 +233,8 @@
   <ItemGroup>
     <None Include="bin\Debug\fotos\icons\default-picture.png" />
   </ItemGroup>
+=======
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

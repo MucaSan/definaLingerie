@@ -83,9 +83,15 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+<<<<<<< HEAD
         Friend ReadOnly Property Default_picture1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Default-picture1", resourceCulture)
+=======
+        Friend ReadOnly Property defina_logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("defina_logo", resourceCulture)
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -93,9 +99,15 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+<<<<<<< HEAD
         Friend ReadOnly Property defina_logo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("defina_logo", resourceCulture)
+=======
+        Friend ReadOnly Property defina_logo2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("defina_logo2", resourceCulture)
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -123,6 +135,7 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+<<<<<<< HEAD
         Friend ReadOnly Property icons8_product_64() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-product-64", resourceCulture)
@@ -143,6 +156,8 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+=======
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
         Friend ReadOnly Property icons8_quit_50() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-quit-50", resourceCulture)

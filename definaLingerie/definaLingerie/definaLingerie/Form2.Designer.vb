@@ -46,7 +46,10 @@ Partial Class Form2
         '
         'Guna2AnimateWindow1
         '
+<<<<<<< HEAD
         Me.Guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND
+=======
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
         Me.Guna2AnimateWindow1.TargetForm = Me
         '
         'Guna2Elipse1
@@ -224,7 +227,11 @@ Partial Class Form2
         Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox2.Image = Global.definaLingerie.My.Resources.Resources.background_form
         Me.Guna2PictureBox2.ImageRotate = 0!
+<<<<<<< HEAD
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(241, 100)
+=======
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(253, 100)
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(580, 386)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

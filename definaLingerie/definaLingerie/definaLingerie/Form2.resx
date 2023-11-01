@@ -121,7 +121,11 @@
     <value>28, 11</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+<<<<<<< HEAD
     <value>33</value>
+=======
+    <value>25</value>
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
   </metadata>
   <metadata name="Guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>528, 14</value>

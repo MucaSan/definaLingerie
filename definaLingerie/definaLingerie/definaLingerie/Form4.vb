@@ -124,9 +124,12 @@ Public Class Form4
     Private Sub Form4_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         connection.Close()
     End Sub
+<<<<<<< HEAD
 
     Private Sub btn_deslogar_Click(sender As Object, e As EventArgs) Handles btn_deslogar.Click
         Me.Close()
         Form2.Show()
     End Sub
+=======
+>>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
 End Class
