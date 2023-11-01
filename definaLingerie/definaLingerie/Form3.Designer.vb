@@ -235,6 +235,7 @@ Partial Class Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(821, 482)
         Me.Controls.Add(Me.btn_deslogar)
@@ -255,6 +256,13 @@ Partial Class Form3
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btn_deslogar, System.ComponentModel.ISupportInitialize).EndInit()
+=======
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(842, 570)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "Form3"
+        Me.Text = "Funcionário"
+>>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

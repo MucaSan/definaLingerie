@@ -14,6 +14,7 @@
 
     End Sub
 
+<<<<<<< HEAD
 
 
     Private Sub btn_relatorios_Click(sender As Object, e As EventArgs)
@@ -37,4 +38,10 @@
         Form4.Show()
         Me.Hide()
     End Sub
+=======
+    Private Sub btn_deslogar_Click(sender As Object, e As EventArgs) Handles btn_deslogar.Click
+        Me.Close()
+        Form1.Show()
+    End Sub
+>>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
 End Class
