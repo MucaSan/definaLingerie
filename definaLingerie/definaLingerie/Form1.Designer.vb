@@ -45,23 +45,11 @@ Partial Class Form1
         '
         'Guna2Elipse1
         '
-<<<<<<< HEAD
         Me.Guna2Elipse1.BorderRadius = 20
         Me.Guna2Elipse1.TargetControl = Me
-=======
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(316, 52)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(378, 268)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
->>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
         '
         'Guna2ShadowForm1
         '
-<<<<<<< HEAD
         Me.Guna2ShadowForm1.TargetForm = Me
         '
         'btn_login
@@ -83,46 +71,9 @@ Partial Class Form1
         Me.btn_login.Size = New System.Drawing.Size(316, 49)
         Me.btn_login.TabIndex = 9
         Me.btn_login.Text = "LOGIN"
-=======
-        Me.Usuário.AutoSize = True
-        Me.Usuário.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Usuário.ForeColor = System.Drawing.Color.Ivory
-        Me.Usuário.Location = New System.Drawing.Point(346, 374)
-        Me.Usuário.Name = "Usuário"
-        Me.Usuário.Size = New System.Drawing.Size(94, 27)
-        Me.Usuário.TabIndex = 3
-        Me.Usuário.Text = "Usuário"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Ivory
-        Me.Label2.Location = New System.Drawing.Point(346, 466)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 27)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Senha"
-        '
-        'btn_login
-        '
-        Me.btn_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Fuchsia
-        Me.btn_login.FlatAppearance.BorderSize = 0
-        Me.btn_login.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_login.ForeColor = System.Drawing.Color.Ivory
-        Me.btn_login.Location = New System.Drawing.Point(349, 556)
-        Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(319, 44)
-        Me.btn_login.TabIndex = 3
-        Me.btn_login.Tag = ""
-        Me.btn_login.Text = "Logar"
-        Me.btn_login.UseVisualStyleBackColor = False
->>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
         '
         'show_password
         '
-<<<<<<< HEAD
         Me.show_password.AutoSize = True
         Me.show_password.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(201, Byte), Integer))
         Me.show_password.CheckedState.BorderRadius = 2
@@ -274,47 +225,12 @@ Partial Class Form1
         Me.Guna2MessageDialog1.Parent = Nothing
         Me.Guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.[Default]
         Me.Guna2MessageDialog1.Text = Nothing
-<<<<<<<< HEAD:definaLingerie/definaLingerie/Form1.Designer.vb
-========
-=======
-        'Guna2ControlBox1
-        '
-        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(786, 0)
-        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(35, 35)
-        Me.Guna2ControlBox1.TabIndex = 0
->>>>>>> 061937808c513ddb3df681cd661ec58d777c9e49
-=======
-        Me.txt_user.BackColor = System.Drawing.Color.White
-        Me.txt_user.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_user.Location = New System.Drawing.Point(350, 408)
-        Me.txt_user.Multiline = True
-        Me.txt_user.Name = "txt_user"
-        Me.txt_user.Size = New System.Drawing.Size(318, 35)
-        Me.txt_user.TabIndex = 1
-        '
-        'txt_senha
-        '
-        Me.txt_senha.BackColor = System.Drawing.Color.White
-        Me.txt_senha.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_senha.Location = New System.Drawing.Point(349, 496)
-        Me.txt_senha.Multiline = True
-        Me.txt_senha.Name = "txt_senha"
-        Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txt_senha.Size = New System.Drawing.Size(319, 35)
-        Me.txt_senha.TabIndex = 2
->>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
->>>>>>>> d77ab069e3f6c75e2a5077942170639b51399fca:definaLingerie/definaLingerie/definaLingerie/Form1.Designer.vb
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-<<<<<<< HEAD
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(821, 482)
         Me.Controls.Add(Me.Guna2Panel1)
@@ -322,15 +238,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.show_password)
         Me.Controls.Add(Me.btn_login)
-=======
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(959, 641)
->>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
         Me.Controls.Add(Me.txt_senha)
         Me.Controls.Add(Me.txt_user)
         Me.Controls.Add(Me.Guna2PictureBox2)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-<<<<<<< HEAD
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -338,14 +249,6 @@ Partial Class Form1
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
-=======
-        Me.MaximizeBox = False
-        Me.Name = "Form1"
-        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Defina - Login"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
->>>>>>> 386650b098b7f317ac996cf345c111e04cd38e59
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
