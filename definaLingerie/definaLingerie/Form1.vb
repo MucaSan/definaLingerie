@@ -23,6 +23,7 @@ Public Class Form1
                     Form2.Show()
                     Me.Hide()
                 ElseIf txt_user.Text = reader("usuario").ToString() And txt_senha.Text = reader("senha").ToString() And reader("cargo") = "2" Then
+                    funcionario_logado = txt_user.Text
                     MsgBox("Logado com sucesso!")
                     txt_senha.Clear()
                     txt_user.Clear()

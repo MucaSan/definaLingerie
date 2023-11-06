@@ -9,4 +9,9 @@ Public Class Form3
         Me.Close()
         Form5.Show()
     End Sub
+
+    Private Sub btn_produtos_Click(sender As Object, e As EventArgs) Handles btn_produtos.Click
+        Form6.Show()
+        Me.Hide()
+    End Sub
 End Class

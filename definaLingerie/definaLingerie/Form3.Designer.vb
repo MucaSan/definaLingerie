@@ -71,8 +71,9 @@ Partial Class Form3
         Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(821, 35)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1095, 43)
         Me.Guna2Panel1.TabIndex = 15
         '
         'Guna2ControlBox1
@@ -80,9 +81,10 @@ Partial Class Form3
         Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(786, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1048, 0)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(47, 43)
         Me.Guna2ControlBox1.TabIndex = 0
         '
         'Guna2ControlBox2
@@ -91,9 +93,10 @@ Partial Class Form3
         Me.Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
         Me.Guna2ControlBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox2.IconColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Guna2ControlBox2.Location = New System.Drawing.Point(750, 0)
+        Me.Guna2ControlBox2.Location = New System.Drawing.Point(1000, 0)
+        Me.Guna2ControlBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Me.Guna2ControlBox2.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2ControlBox2.Size = New System.Drawing.Size(47, 43)
         Me.Guna2ControlBox2.TabIndex = 1
         '
         'Label1
@@ -101,9 +104,10 @@ Partial Class Form3
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(327, 52)
+        Me.Label1.Location = New System.Drawing.Point(436, 64)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 45)
+        Me.Label1.Size = New System.Drawing.Size(243, 54)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Funcionário"
         '
@@ -112,7 +116,7 @@ Partial Class Form3
         Me.btn_clientes.Animated = True
         Me.btn_clientes.AutoRoundedCorners = True
         Me.btn_clientes.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.btn_clientes.BorderRadius = 17
+        Me.btn_clientes.BorderRadius = 22
         Me.btn_clientes.BorderThickness = 1
         Me.btn_clientes.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btn_clientes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
@@ -121,9 +125,10 @@ Partial Class Form3
         Me.btn_clientes.FillColor = System.Drawing.Color.Transparent
         Me.btn_clientes.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_clientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.btn_clientes.Location = New System.Drawing.Point(214, 313)
+        Me.btn_clientes.Location = New System.Drawing.Point(285, 385)
+        Me.btn_clientes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_clientes.Name = "btn_clientes"
-        Me.btn_clientes.Size = New System.Drawing.Size(177, 37)
+        Me.btn_clientes.Size = New System.Drawing.Size(236, 46)
         Me.btn_clientes.TabIndex = 25
         Me.btn_clientes.Text = "Administrar Clientes"
         '
@@ -132,7 +137,7 @@ Partial Class Form3
         Me.btn_produtos.Animated = True
         Me.btn_produtos.AutoRoundedCorners = True
         Me.btn_produtos.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.btn_produtos.BorderRadius = 17
+        Me.btn_produtos.BorderRadius = 22
         Me.btn_produtos.BorderThickness = 1
         Me.btn_produtos.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btn_produtos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
@@ -143,9 +148,10 @@ Partial Class Form3
         Me.btn_produtos.FillColor2 = System.Drawing.Color.Transparent
         Me.btn_produtos.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_produtos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(101, Byte), Integer))
-        Me.btn_produtos.Location = New System.Drawing.Point(457, 313)
+        Me.btn_produtos.Location = New System.Drawing.Point(609, 385)
+        Me.btn_produtos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_produtos.Name = "btn_produtos"
-        Me.btn_produtos.Size = New System.Drawing.Size(181, 37)
+        Me.btn_produtos.Size = New System.Drawing.Size(241, 46)
         Me.btn_produtos.TabIndex = 24
         Me.btn_produtos.Text = "Cadastrar produtos"
         '
@@ -165,10 +171,11 @@ Partial Class Form3
         Me.Guna2GradientCircleButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
         Me.Guna2GradientCircleButton2.Image = Global.definaLingerie.My.Resources.Resources.icons8_staff_96
         Me.Guna2GradientCircleButton2.ImageSize = New System.Drawing.Size(96, 96)
-        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(227, 149)
+        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(303, 183)
+        Me.Guna2GradientCircleButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
         Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(148, 148)
+        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(197, 182)
         Me.Guna2GradientCircleButton2.TabIndex = 27
         '
         'Guna2GradientCircleButton1
@@ -187,10 +194,11 @@ Partial Class Form3
         Me.Guna2GradientCircleButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
         Me.Guna2GradientCircleButton1.Image = Global.definaLingerie.My.Resources.Resources.icons8_product_96
         Me.Guna2GradientCircleButton1.ImageSize = New System.Drawing.Size(96, 96)
-        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(472, 149)
+        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(629, 183)
+        Me.Guna2GradientCircleButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
         Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(148, 148)
+        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(197, 182)
         Me.Guna2GradientCircleButton1.TabIndex = 26
         '
         'Guna2PictureBox1
@@ -198,9 +206,10 @@ Partial Class Form3
         Me.Guna2PictureBox1.BorderRadius = 28
         Me.Guna2PictureBox1.Image = Global.definaLingerie.My.Resources.Resources.definaLogo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 41)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(16, 50)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(56, 56)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(75, 69)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 16
         Me.Guna2PictureBox1.TabStop = False
@@ -210,9 +219,10 @@ Partial Class Form3
         Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox2.Image = Global.definaLingerie.My.Resources.Resources.background_form
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(241, 100)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(321, 123)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(580, 386)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(773, 475)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 18
         Me.Guna2PictureBox2.TabStop = False
@@ -224,7 +234,8 @@ Partial Class Form3
         Me.btn_deslogar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_deslogar.Image = Global.definaLingerie.My.Resources.Resources.icons8_quit_50
         Me.btn_deslogar.ImageRotate = 0!
-        Me.btn_deslogar.Location = New System.Drawing.Point(759, 47)
+        Me.btn_deslogar.Location = New System.Drawing.Point(1012, 58)
+        Me.btn_deslogar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_deslogar.Name = "btn_deslogar"
         Me.btn_deslogar.Size = New System.Drawing.Size(50, 50)
         Me.btn_deslogar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -233,10 +244,10 @@ Partial Class Form3
         '
         'Form3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(821, 482)
+        Me.ClientSize = New System.Drawing.Size(1095, 593)
         Me.Controls.Add(Me.btn_deslogar)
         Me.Controls.Add(Me.Guna2GradientCircleButton2)
         Me.Controls.Add(Me.Guna2GradientCircleButton1)
@@ -247,7 +258,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
